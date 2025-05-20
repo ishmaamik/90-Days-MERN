@@ -23,9 +23,9 @@ const Products = () => {
                 price: product.price,
                 category: product.category
             })
-
             // res.status(201).json("Product added successfully")
             console.log("Product added successfully")
+            
 
 
         }
@@ -49,7 +49,7 @@ const Products = () => {
 
     useEffect(() => {
         getAllProducts()
-    }, [])
+    }, [,createProduct])
 
     /* We do {...product, name} because we want to destructure product using `spread syntax`, 
     and keep all the other fields unchanged instead of setting name as name and all the other fields blank

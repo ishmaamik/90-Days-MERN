@@ -82,14 +82,14 @@ const Products = () => {
                         <h2>Category</h2>
                     </div>
                     {products.map((p, index) => (
-                        <>
-
+                        
+/*The outer <> should have the key not the div so I removed <> </> as not more than one component present */
                             <div className="products" key={index}>
                                 <h3>{p.name}</h3>
                                 <h3>{p.price}</h3>
                                 <h3>{p.category}</h3>
                             </div>
-                        </>
+                        
                     ))}
                 </div>
             </div>

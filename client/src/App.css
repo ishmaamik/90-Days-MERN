@@ -1,0 +1,12 @@
+
+
+.products{
+    display: flex;
+    gap: 25px;
+    justify-content:start;
+}
+
+.products > div{
+    text-align: left;
+    flex-basis: 150;
+}

@@ -57,6 +57,11 @@ const product= {name: "" , price: ""}
 axios.post(url, product) unless the backend is exactly expecting the single object which
 it can then destructure and get the properties, in our case our backend is expecting the attributes themselves!
 
+
+4. With useEffect array dependency adding [, createProduct] for getAllProducts auto
+brings the changes without any refresh as soon as we create a product, the "," is a must
+as it says empty array condition and createArray condition.
+
 Read these:
 
 1. Export default vs Named Export: https://medium.com/@heshramsis/understanding-the-difference-between-export-default-and-export-with-named-exports-in-javascript-f0569c221a3
